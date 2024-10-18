@@ -536,12 +536,12 @@
     transition: var(--transition-2);
   }
   
-  .preload > * { transition: var(--transition-1); }
+  .preload > * { transition: var(--transition-2); }
   
   .preload.loaded > * { opacity: 0; }
   
   .preload.loaded {
-    transition-delay: 250ms;
+    transition-delay: 1000ms;
     transform: translateY(100%);
   }
   
@@ -573,7 +573,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-stroke: 0.5px var(--eerie-black-3);
-    animation: loadingText linear 2s infinite;
+    animation: loadingText linear 1s infinite;
   }
   
   @keyframes loadingText {
